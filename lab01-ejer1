@@ -1,0 +1,20 @@
+Algoritmo PreparandoUnCafe
+	//Definicion de variables 
+	Definir taza, cafepreparado como Cadenas
+	Definir azucar como real 
+	Definir salida como cadena 
+	
+	//Entrada 
+	Escribir "ingrese el tipo/estado de la taza (ej. Taza limpia):"
+	Leer taza
+	
+	Escribir "ingrese el estado del cafe (ej. Café caliente de cafetera):"
+	Leer cafepreparado
+	Escribir "ingresar la cantidad/tipo de azucar (ej. 2 cucharadas):"
+	Leer azucar
+	//Proceso (Estructura puramente secuencial)
+	Escribir "paso 1: Colocar ", taza 
+	Escribir "paso 2: Servir el " cafepreparado, " dentro de la ", taza, "."
+	
+	
+FinAlgoritmo
