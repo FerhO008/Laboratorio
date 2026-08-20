@@ -15,6 +15,9 @@ Algoritmo PreparandoUnCafe
 	//Proceso (Estructura puramente secuencial)
 	Escribir "paso 1: Colocar ", taza 
 	Escribir "paso 2: Servir el " cafepreparado, " dentro de la ", taza, "."
-	
-	
+	Escribir "paso 3: Agregar ", azucar," a la ", taza, "."
+    Escribir "paso 4: Mesclar el contenido con una cuchara."
+    //salida 
+	salida " Taza de cafe lista para consumir"
+    
 FinAlgoritmo
