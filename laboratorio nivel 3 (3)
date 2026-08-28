@@ -1,0 +1,48 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    // Declaración de variables
+    string nombre;
+    int edad;
+    string carrera;
+    int semestre;
+    double promedio;
+
+    // Entrada de datos
+    cout << "Ingrese el nombre del estudiante:";
+    cin >> nombre;
+
+    cout << "Ingrese la edad: ";
+    cin >> edad;
+
+    cout << "Ingrese la carrera:";
+    cin >> carrera;
+    cout << "Ingrese el semestre: ";
+    cin >> semestre;
+    cout << "Ingrese el promedio final:";
+    cin >> promedio;
+
+    // Salida del programa
+    cout << fixed << setprecision(3);
+
+    cout << "\n--- DATOS DEL ESTUDIANTE ---" << endl;
+    cout << "Nombre: " << nombre << endl;
+    cout << "Edad: " << edad << endl;
+    cout << "Carrera:" << carrera << endl;
+    cout << "Semestre: " << semestre << endl;
+    cout << "Promedio:" << promedio << endl;
+
+    // Condición
+    if (promedio >= 51) {
+        cout << "Resultado: APROBADO" << endl;
+    }
+    else {
+        cout <<"Resultado: REPROBADO"<< endl;
+    }
+
+    return 0;
+}
