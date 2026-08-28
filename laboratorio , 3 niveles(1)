@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    // Declaración de variables
+    string nombre;
+    int edad;
+    string carrera;
+    int semestre;
+
+    // Entrada de datos
+    cout << "Ingrese el nombre del estudiante: ";
+    cin >> nombre;
+
+    cout << "Ingrese la edad: ";
+    cin >> edad;
+
+    cout << "Ingrese la carrera: ";
+    cin >> carrera;
+
+    cout << "Ingrese el semestre: ";
+    cin >> semestre;
+
+    // Salida del programa
+    cout << "\n--- DATOS DEL ESTUDIANTE ---" << endl;
+    cout << "Nombre: " << nombre << endl;
+    cout << "Edad: " << edad << endl;
+    cout << "Carrera: " << carrera << endl;
+    cout << "Semestre: " << semestre << endl;
+
+    return 0;
+}
