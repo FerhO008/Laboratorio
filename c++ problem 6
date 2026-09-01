@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    // Declaracion de variables
+    int numero1, numero2;
+
+    // Entrada de datos
+    cout << "Ingrese el primer numero: ";
+    cin >> numero1;
+
+    cout << "Ingrese el segundo numero: ";
+    cin >> numero2;
+
+    // Condicion
+    if (numero1 > numero2) {
+        cout << "\nEl numero mayor es: " << numero1 << endl;
+    }
+    else {
+        cout << "\nEl numero mayor es: " << numero2 << endl;
+    }
+
+    return 0;
+}
