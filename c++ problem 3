@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    // Declaracion de variables
+    double nota1, nota2, nota3;
+    double promedio;
+
+    // Entrada de datos
+    cout << "Ingrese la primera nota: ";
+    cin >> nota1;
+
+    cout << "Ingrese la segunda nota: ";
+    cin >> nota2;
+
+    cout << "Ingrese la tercera nota: ";
+    cin >> nota3;
+
+    // Proceso
+    promedio = (nota1 + nota2 + nota3) / 3;
+
+    // Salida
+    cout << fixed << setprecision(2);
+    cout << "\nEl promedio es: " << promedio << endl;
+
+    return 0;
+}
