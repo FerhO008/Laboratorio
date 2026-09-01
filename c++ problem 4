@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    // Declaracion de variables
+    double base, altura, area;
+
+    // Entrada de datos
+    cout << "Ingrese la base del triangulo: ";
+    cin >> base;
+
+    cout << "Ingrese la altura del triangulo: ";
+    cin >> altura;
+
+    // Proceso
+    area = (base * altura) / 2;
+
+    // Salida
+    cout << fixed << setprecision(2);
+    cout << "\nEl area del triangulo es: " << area << endl;
+
+    return 0;
+}
