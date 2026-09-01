@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    // Declaracion de variables
+    double horas, pagoHora;
+    double salario, bono, total;
+
+    // Entrada de datos
+    cout << "Ingrese las horas trabajadas: ";
+    cin >> horas;
+
+    cout << "Ingrese el pago por hora: ";
+    cin >> pagoHora;
+
+    // Proceso
+    salario = horas * pagoHora;
+
+    // Condicion
+    if (horas > 40) {
+
+        bono = salario * 0.10;
+        total = salario + bono;
+
+    }
+    else {
+
+        total = salario;
+
+    }
+
+    // Salida
+    cout << fixed << setprecision(2);
+    cout << "\nEl salario total es: " << total << " Bs" << endl;
+
+    return 0;
+}
