@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string nombre;
+    double consumo, pago, total;
+    
+    cout << "Ingrese nombre del cliente: ";
+    cin >> nombre;
+    
+    cout << "Ingrese consumo en m3: ";
+    cin >> consumo;
+    
+    if (consumo > 0 && consumo <= 15) {
+        pago = consumo * 1.20;
+        cout << "Categoria: Consumo Minimo" << endl;
+    }
+    else if (consumo > 15 && consumo <= 35) {
+        pago = consumo * 2.50;
+        cout << "Categoria: Consumo Domestico" << endl;
+    }
+    else if (consumo > 35 && consumo <= 70) {
+        pago = consumo * 4.00;
+        cout << "Categoria: Consumo Comercial" << endl;
+    }
+    else {
+        pago = consumo * 6.50;
+        cout << "Categoria: Consumo Alto / Industrial" << endl;
+    }
+    
+    total = pago + 10;
+    
+    cout << "Nombre del cliente: " << nombre << endl;
+    cout << "Monto fijo: Bs 10" << endl;
+    cout << "Pago por consumo: Bs " << pago << endl;
+    cout << "Pago total: Bs " << total << endl;
+    
+    return 0;
+}
