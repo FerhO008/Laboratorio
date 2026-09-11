@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char opcion;
+    double peso, montoTotal;
+
+    do {
+        cout << "\n--- ENCOMIENDAS BOLIVIA ---" << endl;
+        cout << "[L] La Paz / El Alto\n[C] Cochabamba\n[S] Santa Cruz\n[X] Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        if (opcion == 'X' || opcion == 'x') break; // Sale directo del bucle
+
+        cout << "Ingrese el peso del paquete (Kg): ";
+        cin >> peso;
+
+        if (peso <= 0) {
+            cout << "Error: El peso debe ser mayor a 0 Kg." << endl;
+            continue;
+        }
+
+        // Calculamos los Kg extra si pesa más de 2 Kg
+        double extra = (peso > 2) ? (peso - 2) : 0;
+
+        switch (opcion) {
+            case 'L': case 'l':
+                montoTotal = 7.00 + (extra * 3.00);
+                break;
+            case 'C': case 'c':
+                montoTotal = 5.00 + (extra * 2.00);
+                break;
+            case 'S': case 's':
+                montoTotal = 8.00 + (extra * 4.00);
+                break;
+            default:
+                cout << "Opcion no valida." << endl;
+                continue; // Vuelve al inicio del menú sin mostrar precio
+        }
+
+        cout << "Monto total a pagar: Bs " << montoTotal << endl;
+
+    } while (true); // Se repite hasta que presione 'X' o 'x'
+
+    cout << "\nGracias por usar el sistema." << endl;
+    return 0;
+}
