@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void registrar(string &nombre, string &apellido) {
+    cout << "Ingrese su nombre: ";
+    cin >> nombre;
+
+    cout << "Ingrese su apellido: ";
+    cin >> apellido;
+}
+
+string unirNombre(string nombre, string apellido) {
+    return nombre + " " + apellido;
+}
+
+int contarCaracteres(string nombre, string apellido) {
+    return nombre.length() + apellido.length();
+}
+
+void mostrar(string completo, int cantidad) {
+    cout << "\nNombre completo: " << completo << endl;
+    cout << "Letras: " << cantidad << endl;
+}
+
+int main() {
+    string nombre, apellido, completo;
+    int cantidad;
+
+    registrar(nombre, apellido);
+
+    completo = unirNombre(nombre, apellido);
+
+    cantidad = contarCaracteres(nombre, apellido);
+
+    mostrar(completo, cantidad);
+
+    return 0;
+}
